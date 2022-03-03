@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { CalculadoraService } from '../service';
+
 //@component gera uma tag html, nomeada pelo selector
 @Component({
   selector: 'app-calculadora',
@@ -10,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 //OnInit: faz parte do ciclo de vida do angular, é chamado logo quando o objeto é inicializado
 export class CalculadoraComponent implements OnInit {
 
-  constructor() { }
+  constructor(private calculadoraService: CalculadoraService) { }
 
   ngOnInit(): void {
   }
