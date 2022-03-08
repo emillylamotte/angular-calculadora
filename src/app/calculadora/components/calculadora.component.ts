@@ -9,10 +9,10 @@ import { CalculadoraService } from '../service';
 })
 export class CalculadoraComponent implements OnInit {
 
-  private numero1!: string;
-  private numero2!: string;
-  private resultado!: number;
-  private operacao!: string;
+  private numero1: string = '0';
+  private numero2: string = '0';
+  private resultado: number = 0;
+  private operacao: string = '';
 
   constructor(private calculadoraService: CalculadoraService) { }
 
@@ -27,9 +27,9 @@ export class CalculadoraComponent implements OnInit {
    */
   limpar(): void {
   	this.numero1 = '0';
-  	this.numero2;
-  	this.resultado;
-  	this.operacao;
+  	this.numero2 = '';
+  	this.resultado = 0;
+  	this.operacao = '';
   }
 
   /**
